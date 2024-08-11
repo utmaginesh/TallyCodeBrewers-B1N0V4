@@ -1,0 +1,131 @@
+.contest-form body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://img.freepik.com/free-vector/hacker-operating-laptop-cartoon-icon-illustration-technology-icon-concept-isolated-flat-cartoon-style_138676-2387.jpg') no-repeat center center fixed;
+    background-size: contain;
+    
+  }
+  
+  .contest-form {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 95%;
+    max-width: 1000px;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .contest-form h2 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 26px;
+  }
+  
+  .contest-form h3 {
+    color: #34495e;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .contest-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  
+  .form-input:focus,
+  .form-textarea:focus,
+  .form-select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+  }
+  
+  textarea.form-textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .test-case,
+  .selection-list {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    border: 1px solid #bdc3c7;
+  }
+  
+  .selection-item {
+    margin-bottom: 10px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .page-button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .page-button:hover {
+    background: #2980b9;
+  }
+  
+  .page-button.active {
+    background: #2980b9;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #3498db;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background: #2980b9;
+    box-shadow: 0 5px 15px rgba(41, 128, 185, 0.4);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contest-form {
+      padding: 20px;
+      max-height: 85vh;
+    }
+  
+    .form-input,
+    .form-textarea,
+    .form-select {
+      font-size: 14px;
+    }
+  
+    .submit-button {
+      font-size: 16px;
+      padding: 12px;
+    }
+  }

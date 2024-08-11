@@ -1,0 +1,57 @@
+.table-container {
+    max-height: 500px; 
+    overflow-y: auto; 
+    margin-top: -18px;
+}
+
+.table-container table {
+    width: 30%;
+    border: 2px solid #333; 
+    border-collapse: collapse;
+    font-size: 18px; 
+}
+  
+.table-container th, .table-container td {
+    border-bottom: 1px solid #333;
+    text-align: left; 
+}
+  
+.table-container th {
+    font-weight: bold;
+}
+
+.table-container td {
+    vertical-align: middle;
+}
+  
+.table-container td:first-child {
+    text-align: center;
+}
+  
+.place-number {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 14px;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  
+.place-1 {
+    background-color: #FFD700;
+}
+  
+.place-2 {
+    background-color: #C0C0C0;
+}
+  
+.place-3 {
+    background-color: #CD7F32;
+}
+  
+.place-4, .place-5, .place-6, .place-7, .place-8, .place-9 {
+    background-color: #333;
+}

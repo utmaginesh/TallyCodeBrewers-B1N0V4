@@ -1,0 +1,77 @@
+.nova-table {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+}
+
+.nova-table table {
+  width: 100%;
+  margin: 15px auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #333;
+}
+
+.nova-table th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.nova-table th {
+  background-color: #444;
+}
+
+.nova-table td:first-child {
+  width: 0.005%;
+  text-align: center;
+}
+
+.nova-table td:nth-child(2) {
+  width: 5%;
+  cursor: pointer;
+}
+
+.nova-table td:nth-child(2):hover {
+  text-decoration: underline;
+  color: steelblue;
+}
+
+.nova-table td:nth-child(3) {
+  width: 2%;
+}
+
+.difficulty-easy {
+  color: #248337;
+}
+
+.difficulty-medium {
+  color: #c89b15;
+}
+
+.difficulty-hard {
+  color: #f44336;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.page-btn {
+  margin: 0 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  color: #333;
+}
+
+.page-btn.active {
+  background-color: #dcdcdc;
+  color: #000;
+  border: 1px solid #aaa;
+}

@@ -1,0 +1,162 @@
+.problem-page {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 95%;
+    height: 81vh;
+    margin: 12px auto;
+    padding: 20px;
+    background-color: #282c34;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.problem-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.problem-title h2 {
+    margin: 0;
+}
+
+
+.problem-content {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    height: calc(100% - 50px);
+}
+
+.problem-description {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #32363f;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.problem-code {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #32363f;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.problem-description::-webkit-scrollbar,
+.problem-code::-webkit-scrollbar,
+.problem-test-cases textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+.problem-description::-webkit-scrollbar-thumb,
+.problem-code::-webkit-scrollbar-thumb,
+.problem-test-cases textarea::-webkit-scrollbar-thumb{
+    background-color: #3c3c3c;
+    border-radius: 10px;
+}
+
+.problem-description::-webkit-scrollbar-track,
+.problem-code::-webkit-scrollbar-track,
+.problem-test-cases textarea::-webkit-scrollbar-track{
+    background-color: #282c34;
+}
+
+.code-header {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #3c3c3c;
+    padding-bottom: 10px;
+    gap: 15px;
+}
+
+#language-select {
+    padding: 5px;
+    font-size: 16px;
+    background-color: #252526;
+    color: #d4d4d4;
+    border: 1px solid #3c3c3c;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.code-header button {
+    background-color: #0970b5;
+    color: #fff;
+    border: 1px solid #076db1;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.custom-input-section button {
+    background-color: #0970b5;
+    color: #fff;
+    border: 1px solid #076db1;
+    margin-left: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.code-header button:hover {
+    background-color: #005a9e;
+}
+
+.code-header button:disabled {
+    background-color: #3c3c3c;
+    border: 1px solid #3c3c3c;
+    cursor: not-allowed;
+}
+
+
+.problem-test-cases {
+    margin: 20px 0;
+}
+
+.test-cases {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.test-case-button {
+    /* background-color: ; */
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    font-size: 13px;
+}
+
+
+.test-case-input {
+    background-color: #252526;
+    color: #d4d4d4;
+    border-radius: 4px;
+    border: 1px solid #3c3c3c;
+    white-space: pre-wrap;
+    margin-top: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #282c34; /* or any other background color you prefer */
+    z-index: 1000; /* Make sure it's above other elements */
+}
+
